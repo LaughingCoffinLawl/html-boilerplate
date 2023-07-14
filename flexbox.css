@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    /* create a flex container */
+    display: flex;
+    /* define horizontal alignment of its items */
+    justify-content: center;
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+}
+
+.menu {
+    /*  DEBUG PURPOSE */
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social,
+.logo,
+.subscribe {
+    border: 1px solid #5995DA;
+}
+
+.social,
+.subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    /* makes items to not flow off the page horizontally */
+    flex-wrap: wrap;
+    /*flex-direction: row-reverse; ROWS ARE NOW RENDERED RIGHT TO LEFT*/
+    /* flex-direction: colum; makes the item list flows vertically */
+    /* this becomes the justify-content of vertical items and vice-versa */
+    align-items: center;
+    flex-direction: row;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+/* Defines the order in which the flex item should be rendered on screen */
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    /* tells the items to stretch to match the width of .footer. */
+    flex: 1;
+}
+
+/* MAKES THE THIRD FOOTER DOUBLED
+.footer-three {
+    flex: 2;
+} 
+*/
+
+.footer-one,
+.footer-three {
+    background-color: #5995DA;
+    /* rule to overwrite the .footer-item flex: 1. This two footers doesn't change in size even if the page is resized by the user. */
+    flex: initial;
+    width: 300px;
+}

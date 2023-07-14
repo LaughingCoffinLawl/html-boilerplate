@@ -1,0 +1,54 @@
+/* Both our .read and .unread selectors share the color
+: white; and background-color: black; declarations, 
+but otherwise have several of their own unique declarations. 
+To cut down on the repetition, 
+we can group these two selectors together as a comma-separated 
+list: */
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+
+
+/*  but what if we only want to apply a separate rule 
+to the element that also has header as a second class?
+
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection preview">go.</p>
+</div>
+
+*/
+.subsection.header {
+    color: red;
+  }
+
+
+
+div {
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    background-color: orange;
+    font-size: 18px;
+}
