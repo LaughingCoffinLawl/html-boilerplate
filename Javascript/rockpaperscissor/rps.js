@@ -6,6 +6,7 @@ while (playerScore < 5 || computerScore < 5) {
     let computerChoice = getComputerChoice();
     playRound(playerChoice, computerChoice);
     winLoss(playerScore, computerScore);
+    setTimeout(() => {}, 2000);
 }
 
 function getComputerChoice() {
