@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-test.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <div>
+          <label for="first_name">First Name:</label>
+          <input type="text" name="first_name" id="first_name">
+        </div>
+      
+        <div>
+          <label for="last_name">Last Name:</label>
+          <input type="text" name="last_name" id="last_name">
+        </div>
+      
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age">
+        </div>
+      
+        <button type="submit">Submit</button>
+      </form>
+
+      <div>
+        <label for="username">What's your name?</label>
+        <input type="text"id="username">
+        <button class="greet-btn">Greet Me</button>
+      </div>
+      
+      <h1 class="greeting"></h1>
+      <script src="form-test.js"></script>
+
+      <select name="Car">
+        <option value="mercedes">Mercedes</option>
+        <option value="tesla">Tesla</option>
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="mini">Mini</option>
+        <option value="ford">Ford</option>
+      </select>
+
+      <h1>Ticket Type</h1>
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child">
+  <label for="child">Child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult">
+  <label for="adult">Adult</label>
+</div>
+
+<div>
+  <input type="radio" id="senior" name="ticket_type" value="senior">
+  <label for="senior">Senior</label>
+</div>
+
+<h1>Pizza Toppings</h1>
+
+<div>
+  <input type="checkbox" id="sausage" name="topping" value="sausage">
+  <label for="sausage">Sausage</label>
+</div>
+
+<div>
+  <input type="checkbox" id="onions" name="topping" value="onions">
+  <label for="onions">Onions</label>
+</div>
+
+<div>
+  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+  <label for="pepperoni">Pepperoni</label>
+</div>
+
+<div>
+  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+  <label for="mushrooms">Mushrooms</label>
+</div>
+
+<fieldset>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name">
+  
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name">
+  </fieldset>
+
+</body>
+</html>
