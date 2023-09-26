@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 5px solid green;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-container {
+    border: 5px solid blue;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: lightblue;
+    gap: 15px
+}
+
+.header {
+    border: 5px solid orange;
+    background-color: lightsalmon;
+    flex: 1;
+}
+
+.header-flex {
+    padding: 0.3rem;
+    display: flex;
+}
+
+.header-one, .header-two {
+    border: 5px solid red;
+    height: 40px;
+    width: 190px;
+    background-color: lightcoral;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.big-one {
+    border: 5px solid red;
+    background-color: lightcoral;
+    margin-top: 50px;
+    width: 50%;
+    height: 10em;
+}
+
+.small-container {
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.small {
+    border: 5px solid blue;
+    flex: 1;
+    background-color: lightblue;
+}
+
+.footer-container {
+    border: 5px solid blue;
+    display: flex;
+    gap:10px;
+    padding: 1em;
+    margin-top: 50px;
+    background-color: lightblue;
+}
+
+.footer {
+    border: 5px solid purple;
+    height: 60px;
+    background-color: lightpink;
+}
+
+.bigger {
+    flex: 1;
+}
+
+.smaller {
+    width: 200px;
+    flex-shrink: 1;
+}
