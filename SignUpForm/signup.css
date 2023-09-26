@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@font-face {
+    font-family: Norse;
+    src: url('./assets/Norse-Bold.otf');
+}
+
+@font-face {
+    font-family: Norse;
+    font-weight: bold;
+    src: url('./assets/Norse-Bold.otf');
+}
+
+:root  {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.img-logo {
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 35%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    max-width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 2px #DDD;
+    overflow: hidden;
+}
+
+.logo-bar {
+    display: flex;
+    margin-top: 30%;
+    background: rgb(0, 0, 0, .5);
+    height: 150px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Norse;
+    font-size: 3rem;
+}
+
+.logo-bar img {
+    max-height: 100%;
+}
+
+main {
+    height: 100%;
+    min-width: 65%;
+    background-color: #FAFAFA;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    height: 33%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 90%;
+}
+
+form {
+    height: 77%;
+}
+
+.login-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    height: 45%;
+    margin-bottom: 3rem;
+    background-color: #FFF;
+    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+}
+
+.login-form p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 35%;
+}
+
+.cell label {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+form input {
+    border: 1px solid #D6D9DC;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.button-area {
+    padding-left: 2rem;
+}
+
+.button-area a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.footer  {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.create-account {
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+.footer p a {
+    color: #596D48;
+}
+
