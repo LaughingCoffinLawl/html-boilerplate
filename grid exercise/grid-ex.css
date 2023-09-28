@@ -1,0 +1,45 @@
+.grid-container {
+    resize: both;
+    overflow: auto;
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid grey;
+    background-color: skyblue;
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(2, 2fr) repeat(3, 1fr); */ 
+
+    /* always 100px */
+    grid-template-rows: repeat(2, min(100px, 200px, 300px, 400px, 500px)); 
+    /* always 500px */
+    grid-template-columns: repeat(5, max(100px, 200px, 300px, 400px, 500px));
+
+    /* In this case, the grid row size will be calculated from the values 200px and 50% grid container’s height.
+     In realtime, the browser will compare both of these values and apply whichever is smallest to the size of our grid row. 
+     Essentially, what this tells this grid is that the track size should be 50% of the grid’s total vertical space
+      (because we are defining a row size), unless that number would exceed 200px. 
+      Essentially, you’re setting a max-height for the track.
+
+      Conversely, the grid column size will be calculated based on the larger of the two values 120px and 15% of the grid container’s width. 
+      In doing so, we are essentially setting a minimum width of our grid column size at 120px.*/
+      
+    grid-template-rows: repeat(2, min(200px, 50%));
+    grid-template-columns: repeat(5, max(120px, 15%));
+  }
+  
+  .grid-item {
+    background-color: #444;
+    text-align: center;
+    color: #ddd;
+    font-family: sans-serif;s
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+  
+  p {
+    margin: 12px auto 24px;
+  }
+  
+  img {
+    height: 60px;
+  }
