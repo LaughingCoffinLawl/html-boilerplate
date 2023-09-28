@@ -1,0 +1,54 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 325px 975px;
+    grid-template-rows: 100px 100px 500px 100px;
+    background-color: lightblue;
+    gap: 15px;
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+}
+
+.container div {
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.container div p {
+    text-align: center;
+    color: white;
+}
+
+.header {
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: cadetblue;
+}
+
+.sidebar {
+    grid-area: 2 / 1 / 4 / 1;
+    background-color: cornflowerblue;
+}
+
+.nav {
+    grid-area: 2 / 2 / 2 / 2;
+    background-color:mediumslateblue;
+}
+
+.article {
+    grid-area: 3 / 2 / 4 / 2;
+    background-color: darkviolet;
+}
+
+.footer {
+    grid-area: 4 / 1/ 5 / 3;
+    background-color: dimgray;
+}
