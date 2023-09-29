@@ -6,9 +6,8 @@
     padding: 4px;
     border: 1px solid grey;
     background-color: skyblue;
-    /* grid-template-rows: repeat(2, 1fr); */
-    /* grid-template-columns: repeat(2, 2fr) repeat(3, 1fr); */ 
-
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
     /* always 100px */
     grid-template-rows: repeat(2, min(100px, 200px, 300px, 400px, 500px)); 
     /* always 500px */
@@ -25,13 +24,28 @@
       
     grid-template-rows: repeat(2, min(200px, 50%));
     grid-template-columns: repeat(5, max(120px, 15%));
+
+    /*
+      minmax() is a CSS function that is specifically used with Grid. It can only be used with the following CSS properties:
+
+      grid-template-columns
+      grid-template-rows
+      grid-auto-columns
+      grid-auto-rows  
+
+    */
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, minmax(150px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
   }
   
   .grid-item {
     background-color: #444;
     text-align: center;
     color: #ddd;
-    font-family: sans-serif;s
+    font-family: sans-serif;
     font-size: 1.5rem;
     padding: 12px;
   }

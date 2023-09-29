@@ -6,8 +6,12 @@ html {
 
 .container {
     display: grid;
+    /* STATIC GRID */
     grid-template-columns: 325px 975px;
     grid-template-rows: 100px 100px 500px 100px;
+    /*  DYNAMIC GRID */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
     background-color: lightblue;
     gap: 15px;
     padding: 15px;
